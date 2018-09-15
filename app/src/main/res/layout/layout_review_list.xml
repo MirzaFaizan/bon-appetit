@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_reviewlist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_reviewlist_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdsadsad"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"/>
+
+        <RatingBar
+            android:id="@+id/rb_reviewlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="5"
+            android:numStars="5"
+            android:theme="@style/RatingBar"
+            style="@style/RatingBar_black"/>
+
+        <TextView
+            android:id="@+id/tv_reviewlist_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sdasdasdsad"
+            android:textSize="13sp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white50"/>
+
+</LinearLayout>

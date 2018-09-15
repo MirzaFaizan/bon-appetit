@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.apps.fooddelivery"
+        minSdkVersion 14
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [onesignal_app_id: "206b3ffc-63d6-43d4-bea0-67f2bbb9c077",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "REMOTE"]
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:24.2.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.android.support:recyclerview-v7:24.0.0'
+    implementation 'com.android.support:design:24.0.0'
+    implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    implementation 'com.google.android.gms:play-services-ads:9.6.0'
+    implementation 'com.google.android.gms:play-services-gcm:9.6.0'
+    implementation 'uk.co.chrisjenx:calligraphy:2.2.0'
+    implementation 'com.android.support:cardview-v7:24.0.0'
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+    implementation 'com.tiagosantos:enchantedviewpager:1.0.0'
+    implementation 'com.onesignal:OneSignal:3.4.4'
+    //Firebase ads
+    implementation 'com.google.firebase:firebase-ads:10.0.1'
+}
+apply plugin: 'com.google.gms.google-services'

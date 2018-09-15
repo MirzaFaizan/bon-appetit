@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        card_view:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:fillViewport="true">-->
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/rootView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--card_view:cardBackgroundColor="@color/whiteAA"-->
+            <!--card_view:cardCornerRadius="3dp"-->
+            <!--card_view:cardElevation="4dp"-->
+            <!--card_view:cardPreventCornerOverlap="false"-->
+            <!--card_view:cardUseCompatPadding="true"-->
+            <!--android:background="@color/whiteAA">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@color/whiteAA">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/total_amount"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_checkout_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="11"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black30" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/comment"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/editText_checkout_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/comment"
+                        android:maxLines="1"
+                        android:paddingTop="5dp"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:inputType="textPersonName"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/black30" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/address"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/editText_checkout_address"
+                        android:layout_width="327dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:background="@android:color/transparent"
+                        android:gravity="top"
+                        android:hint="@string/address"
+                        android:maxLines="5"
+                        android:paddingTop="5dp"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/black30" />
+
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/button_checkout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/checkout"
+                        android:textColor="@color/white"
+                        app:backgroundTint="@color/green" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <!--</android.support.v7.widget.CardView>-->
+
+    <!--</ScrollView>-->
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_cart"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/iv_cartlist_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/bg"
+            app:siRadius="5dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_cartlist_menu_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="sdsadsaasd"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="@string/price"/>
+
+                <TextView
+                    android:id="@+id/tv_cartlist_menu_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/status_bar"
+                    android:textSize="16sp"
+                    android:text="45"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_round_counter">
+
+                    <TextView
+                        android:id="@+id/tv_cartlist_minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="-"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black30"/>
+
+                    <TextView
+                        android:id="@+id/tv_menu_qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="03"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black30"/>
+
+                    <TextView
+                        android:id="@+id/tv_cartlist_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="+"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_update_cartlist"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/update"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_cart_delete_menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/delete"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white50"/>
+
+</LinearLayout>

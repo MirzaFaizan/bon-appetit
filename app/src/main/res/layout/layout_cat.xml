@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:paddingBottom="2dp">
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/iv_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:siRadius="3dp"
+        app:siBorderAlpha="0"/>
+
+    <View
+        android:id="@+id/view_cat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_shadow_black70"/>
+
+    <TextView
+        android:id="@+id/tv_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="22sp"/>
+
+</RelativeLayout>

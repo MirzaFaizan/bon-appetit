@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:paddingTop="7dp"
+
+    android:clickable="true">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/cart"/>
+
+    <TextView
+        android:id="@+id/textView_menu_no"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:minWidth="17dp"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/bg_circle_orange"
+        android:text="2"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:padding="2dp"/>
+
+</RelativeLayout>
