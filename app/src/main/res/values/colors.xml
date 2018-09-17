@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2dcc70</color>
-    <color name="colorPrimaryDark">#27ae61</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="status_bar">#27ae61</color>
+    <color name="colorPrimary">#f99120</color>
+    <color name="colorPrimaryDark">#f99120</color>
+    <color name="colorAccent">#70000000</color>
+    <color name="status_bar">#f99120</color>
 
     <color name="white">#ffffff</color>
     <color name="white30">#30ffffff</color>
@@ -18,8 +18,8 @@
     <color name="menu_list_30">#30525252</color>
     <color name="menu_list_10">#10525252</color>
     <color name="bg_review_dialog">#e7e7e7</color>
-    <color name="red">#ff0000</color>
-    <color name="green">#27ae61</color>
+    <color name="red">#70000000</color>
+    <color name="green">#f99120</color>
     <color name="bg_pro_pic">#e2dcdc</color>
     <color name="tab_divider">#80ffffff</color>
 </resources>

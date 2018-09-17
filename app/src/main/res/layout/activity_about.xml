@@ -5,7 +5,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:gravity="center_vertical"
-    android:background="@drawable/bg">
+    android:background="@color/white">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_about"

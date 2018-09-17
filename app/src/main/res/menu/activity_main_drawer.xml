@@ -31,6 +31,7 @@
             <!--android:title="@string/favourite" />-->
 
         <item
+
             android:id="@+id/nav_profile"
             android:icon="@mipmap/profile"
             android:title="@string/profile" />
@@ -39,14 +40,16 @@
 
 
     <item
+        android:visible="true"
         android:id="@+id/nav_rate"
-        android:icon="@mipmap/rate"
-        android:title="@string/rateapp" />
+        />
 
     <item
         android:id="@+id/nav_shareapp"
         android:icon="@mipmap/share"
-        android:title="@string/shareapp" />
+        android:title="@string/shareapp"
+        android:visible="false"
+        />
 
 
 
@@ -58,6 +61,7 @@
     <item
         android:id="@+id/nav_priacy"
         android:icon="@mipmap/privacy"
+        android:visible="true"
         android:title="@string/privacypolicy" />
 
     <item

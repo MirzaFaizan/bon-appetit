@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg">
+    android:background="@color/white">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_proedit"
@@ -54,7 +54,7 @@
                     app:siRadius="100dp"
                     app:siBorderWidth="5dp"
                     app:siBorderColor="@color/bg_pro_pic"
-                    android:src="@drawable/bg"/>
+                    android:src="@color/white"/>
 
                 <ImageView
                     android:id="@+id/iv_edit_pro_ic"

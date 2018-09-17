@@ -147,7 +147,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="240dp"
-                android:background="@drawable/bg"
+                android:background="@color/white"
                 android:layout_marginTop="?attr/actionBarSize"
                 android:paddingTop="7dp"
                 android:paddingBottom="7dp">

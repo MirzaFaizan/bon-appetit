@@ -12,6 +12,7 @@
         android:title="@string/search"
         android:icon="@mipmap/search"
         app:showAsAction="always"
-        app:actionViewClass="android.support.v7.widget.SearchView" />
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:visible="false"/>
 
 </menu>
